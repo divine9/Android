@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/signInToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SIGN IN"
+            android:textColor="@color/app_bar_text_color"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.tuyenmonkey.mkloader.MKLoader
+                android:id="@+id/mlloader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:mk_color="#71bf45"
+                app:mk_type="FishSpinner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/logo_height"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_weight="0.11"
+                    android:background="@drawable/ic_login_logo" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/login_emailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:hint="Email or User Name"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    app:met_underlineColor="@color/colorPrimary" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    app:met_underlineColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25dp"
+                    android:text="OR CONNECT WITH"
+                    android:textColor="#2c5682"
+                    android:textSize="@dimen/or_connect_with" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/loginWithFacebook"
+                        android:layout_width="@dimen/loginWithFacebook"
+                        android:layout_height="@dimen/loginWithFacebook"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_icon_facebook" />
+
+                    <ImageView
+                        android:id="@+id/loginWithGmail"
+                        android:layout_width="@dimen/loginWithFacebook"
+                        android:layout_height="@dimen/loginWithFacebook"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_icon_gplus" />
+
+                    <ImageView
+                        android:id="@+id/loginWithLinkdin"
+                        android:layout_width="@dimen/loginWithFacebook"
+                        android:layout_height="@dimen/loginWithFacebook"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_linkedin" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/signIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/signin_button"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/ic_signin"
+                    android:text="SIGN IN"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_bar_text_color"
+                    android:textSize="@dimen/signin" />
+
+                <TextView
+                    android:id="@+id/login_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Forgot Password?"
+                    android:textColor="#676767"
+                    android:textSize="@dimen/forgot" />
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="0dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

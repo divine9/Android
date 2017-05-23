@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#E7E7E7">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/generic_propic"
+                    />
+                <TextView
+                    android:text="Guest"
+                    android:textColor="#01346B"
+                    android:textSize="26sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/colorPrimary"
+                android:text="GENERAL"
+                android:textSize="24sp"
+                android:textColor="@color/app_bar_text_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/guestRegister">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lasd"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textSize="24sp"
+                    android:textColor="#01346B"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="55dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lasd"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/guestSignIn">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lasd"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In"
+                    android:textSize="24sp"
+                    android:textColor="#01346B"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="55dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lasd"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/guestAppFeedBack">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lasd"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App Feedback"
+                    android:textSize="24sp"
+                    android:textColor="#01346B"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="55dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lasd"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/guestAboutUs">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lasd"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textSize="24sp"
+                    android:textColor="#01346B"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="55dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lasd"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/guestTermOfServices">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lasd"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms of Services"
+                    android:textSize="24sp"
+                    android:textColor="#01346B"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="55dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lasd"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="30dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/guestPrivacyPolicy">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lasd"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textSize="24sp"
+                    android:textColor="#01346B"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="55dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lasd"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

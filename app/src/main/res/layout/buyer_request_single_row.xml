@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/border_for_edit_text">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/buyer_request_pic"
+            android:src="@drawable/te1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buyer_request_name"
+                android:text="Dinesh Kalola"
+                android:textSize="22sp"
+                android:textColor="#676767"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="March 16,2017"
+                android:textSize="22sp"
+                android:textColor="#676767"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="#F3F3F3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="web and mobile Apps"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3offers sent"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="#F3F3F3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#676767"
+        android:text="need an app like  touch pal key board and kikakeyboard.anydevloper can do it for me?(android app)duration:2days"
+        android:textSize="18sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyer_request_send_offer"
+        android:background="@drawable/button_background"
+        android:text="Send offers"
+        android:textColor="@color/app_bar_text_color"
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

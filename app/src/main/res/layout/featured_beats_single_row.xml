@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ry_top"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="bottom"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/beat_list_catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Graphic and Design"
+            android:textColor="@color/app_bar_text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beat_list_catName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Creati8ve"
+            android:textColor="@color/app_bar_text_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/beatImg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/beat_price_border"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_beat_price"
+                android:gravity="center"
+                android:text="499"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/beat_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000"
+                    android:textSize="@dimen/beat_title" />
+
+                <TextView
+                    android:id="@+id/txt_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textColor="#676767"
+                    android:textSize="@dimen/beat_title2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:isIndicator="false"
+                        android:numStars="5"
+                        android:progressTint="#FAB022" />
+
+                    <TextView
+                        android:id="@+id/txt_total_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:textColor="#676767"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_level4"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_beat_star_level" />
+
+                <TextView
+                    android:id="@+id/txt_level"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_featured"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/beat_feater_border"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_beat_featured"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Featured"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_beat_fav"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_beat_fav_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

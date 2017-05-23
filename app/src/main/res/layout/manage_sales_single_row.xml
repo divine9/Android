@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="4">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/manage_sales_beat_pic"
+            android:src="@drawable/te1"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smith Jhon"
+            android:textColor="#676767"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_background"
+            android:text="Active"
+            android:textSize="20sp"
+            android:textColor="@color/app_bar_text_color"
+            android:gravity="center"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Professional Infographics with your..."
+            android:id="@+id/beat_title_manage_sales"
+            android:textSize="18sp"
+            android:textColor="#676767"
+            android:gravity="start"
+            android:textAlignment="viewStart" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:text="499"
+            android:textSize="20sp"
+            android:textColor="#676767"
+            android:gravity="center"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due On 01/03/2017"
+                android:textSize="18sp"
+                android:textColor="#676767"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/lasd"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

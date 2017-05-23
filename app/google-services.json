@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "682129183747",
+    "project_id": "demofixpocket"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682129183747:android:efe25a253f0605b0",
+        "android_client_info": {
+          "package_name": "com.fixpocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682129183747-lero5c0g87kr7qmin1vvkjoha3q788d6.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "682129183747-7daetaks3v4eoel1j1kt910k0tndijgf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fixpocket",
+            "certificate_hash": "00f333ec76eaf0b14ca8c2a0048ce2a3374c81ee"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAklliuROQY3Zw6Dh1_EE55wz-UencjO_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

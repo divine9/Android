@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.fixpocket.Fragment.Home">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <!-->
+    main conatin
+
+    <!-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="10dip"
+                    app:fillColor="#808080"
+                    app:pageColor="#FFFAF0" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/Title_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:text="Top Categories"
+                    android:textColor="#01346B"
+                    android:textSize="@dimen/top_category"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/viewAllCategories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All"
+                    android:textColor="#01346B"
+                    android:textSize="@dimen/top_category"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iconViewAllCategories"
+                    android:layout_width="@dimen/view_all_icon"
+                    android:layout_height="@dimen/view_all_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ic_view_all_icon" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/topCategoryListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@null"
+                android:scrollbars="none"></ListView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/Title_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:text="Featured Beats"
+                    android:textColor="@color/Title_text"
+                    android:textSize="@dimen/top_category"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/viewAllBeats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All"
+                    android:textColor="#01346B"
+                    android:textSize="@dimen/top_category"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iconViewAllBeats"
+                    android:layout_width="@dimen/view_all_icon"
+                    android:layout_height="@dimen/view_all_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/ic_view_all_icon" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/featuredBeatsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:scrollbars="none"></ListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/mlloader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:mk_color="#71bf45"
+        app:mk_type="FishSpinner" />
+</RelativeLayout>

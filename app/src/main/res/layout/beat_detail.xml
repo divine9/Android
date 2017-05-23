@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/beat_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fixpocket.Fragment.BeatDetail">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_with_image_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_beat"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="#F3F3F3"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_cir_icon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                             />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:id="@+id/name_of_designer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#01346B"
+                                android:textSize="@dimen/designer_name"
+                                android:textStyle="bold"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/name_of_designer"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <RatingBar
+                                    android:id="@+id/ratingBar"
+                                    style="?android:attr/ratingBarStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:isIndicator="false"
+                                    android:numStars="5"
+                                    android:progressTint="#FAB022" />
+
+                                <TextView
+                                    android:id="@+id/txt_title_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#01346B"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <TextView
+                        android:id="@+id/txt_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#01346B"
+                        android:textSize="@dimen/beat_desc"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_by"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#01346B"
+                        android:textSize="@dimen/beat_cat" />
+
+                    <TextView
+                        android:id="@+id/txt_contact_Seller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:text="Contact Seller"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/beat_cat"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.fixpocket.Custome.SlidingTabLayout
+                        android:id="@+id/tabs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F3F3F3"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:textAlignment="center" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/place_order_beat_detail_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_beat_details_place_order"
+                    android:text="PLACE ORDER"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_bar_text_color"
+                    android:textSize="@dimen/place_order" />
+
+            </LinearLayout>
+
+            <com.tuyenmonkey.mkloader.MKLoader
+                android:id="@+id/mlloader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:mk_color="#71bf45"
+                app:mk_type="FishSpinner" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dot">8dp</dimen>
+    <dimen name="selected_dot">12dp</dimen>
+
+    <!--Splash screen-->
+    <dimen name="splash_logo_width">120dp</dimen>
+    <dimen name="splash_logo_height">110dp</dimen>
+    <dimen name="splash_logo_back">200dp</dimen>
+
+    <dimen name="splash_text_title">24dp</dimen>
+    <dimen name="splash_text_title2">18dp</dimen>
+
+
+    <!--Landing page-->
+    <dimen name="signin_up_icon">50dp</dimen>
+    <dimen name="signin_up_text">18dp</dimen>
+
+
+    <!--SIGN IN page-->
+    <dimen name="logo_height">50dp</dimen>
+    <dimen name="or_connect_with">16dp</dimen>
+    <dimen name="loginWithFacebook">40dp</dimen>
+    <dimen name="signin">18dp</dimen>
+    <dimen name="forgot">16dp</dimen>
+    <dimen name="signin_button">45dp</dimen>
+
+
+    <!--SIGN UP page-->
+    <dimen name="apply_height">25dp</dimen>
+    <dimen name="apply_textsize">12dp</dimen>
+    <dimen name="have_coupob_code">16dp</dimen>
+    <dimen name="signup_button">45dp</dimen>
+    <dimen name="signup">18dp</dimen>
+    <dimen name="already_member">14dp</dimen>
+
+    <!--Forgot password page-->
+    <dimen name="forgotpass">80dp</dimen>
+    <dimen name="forgotpass_text">14dp</dimen>
+    <dimen name="forgotpass_submit">40dp</dimen>
+    <dimen name="forgotpass_submit_text">16dp</dimen>
+
+    <!--welcome page-->
+    <dimen name="top_category">16dp</dimen>
+    <dimen name="view_all_icon">20dp</dimen>
+
+    <!--TopCategory-adapter-->
+    <dimen name="category_name">18dp</dimen>
+    <dimen name="beat_price_border">40dp</dimen>
+    <dimen name="beat_feater_border">30dp</dimen>
+    <dimen name="beat_title">16dp</dimen>
+    <dimen name="beat_title2">14dp</dimen>
+
+    <!--Beat Details-->
+    <dimen name="designer_name">16dp</dimen>
+    <dimen name="beat_desc">20dp</dimen>
+    <dimen name="beat_cat">14dp</dimen>
+    <dimen name="place_order">16dp</dimen>
+
+</resources>

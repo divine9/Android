@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75">
+
+            <RelativeLayout
+                android:id="@+id/rlViewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="10dip"
+                    app:fillColor="#808080"
+                    app:pageColor="#FFFAF0" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/landingpageSigninImg"
+                        android:layout_width="@dimen/signin_up_icon"
+                        android:layout_height="@dimen/signin_up_icon"
+                        android:background="@drawable/ic_sing_in_" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/landingpageSignUpImg"
+                        android:layout_width="@dimen/signin_up_icon"
+                        android:layout_height="@dimen/signin_up_icon"
+                        android:background="@drawable/ic_sing_up_icon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/landingpageSignin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="SIGN IN"
+                    android:textColor="#01346B"
+                    android:textSize="@dimen/signin_up_text" />
+
+                <TextView
+                    android:id="@+id/landingpageSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="SIGN UP"
+                    android:textColor="#01346B"
+                    android:textSize="@dimen/signin_up_text" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#71bf45</color>
+    <color name="colorPrimaryDark">#1f2128</color>
+    <color name="colorAccent">#71bf45</color>
+    <color name="app_bar_text_color">#ffffff</color>
+    <color name="dot_color">#676767</color>
+    <color name="selected_dot_color">#01346B</color>
+
+    <color name="Title_background">#F3F3F3</color>
+    <color name="Title_text">#01346B</color>
+
+    <color name="green">#71bf45</color>
+    <color name="blue">#003669</color>
+
+</resources>

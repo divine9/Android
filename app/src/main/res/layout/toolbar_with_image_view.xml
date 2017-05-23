@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/back_button"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_back" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/toolBarTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:singleLine="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/app_bar_text_color"
+                android:textSize="22dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/toolBarImg"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:civ_border_color="#59595B"
+                app:civ_border_width="1dp"
+
+                />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

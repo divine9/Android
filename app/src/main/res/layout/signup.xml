@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/signUpToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SIGN UP"
+            android:textColor="@color/app_bar_text_color"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.tuyenmonkey.mkloader.MKLoader
+                android:id="@+id/mlloader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:mk_color="#71bf45"
+                app:mk_type="FishSpinner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/logo_height"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/ic_login_logo" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/signUp_emailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:hint="Email Address"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    app:met_underlineColor="@color/colorPrimary" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/signUp_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:hint="Select Username"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    app:met_underlineColor="@color/colorPrimary" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/signUp_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:hint="Select Password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    app:met_underlineColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="Have you coupon code ?"
+                    android:textColor="#2c5682"
+                    android:textSize="@dimen/have_coupob_code" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="horizontal">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/signUp_coupon_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:hint="Enter Code"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        app:met_underlineColor="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/promoCodeApply"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/apply_height"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="7"
+                        android:background="@drawable/ic_apply"
+                        android:text="Apply"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/app_bar_text_color"
+                        android:textSize="@dimen/apply_textsize" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="OR CONNECT WITH"
+                    android:textColor="#2c5682"
+                    android:textSize="@dimen/or_connect_with" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/signUpWithFacebook"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_icon_facebook" />
+
+                    <ImageView
+                        android:id="@+id/signUpWithGmail"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_icon_gplus" />
+
+                    <ImageView
+                        android:id="@+id/signUpWithLinkdin"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_icon_facebook" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/signup_button"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_signup"
+                    android:text="SIGN UP"
+                    android:textAlignment="center"
+                    android:textColor="@color/app_bar_text_color"
+                    android:textSize="@dimen/signup" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Already a Member ?"
+                        android:textColor="#676767"
+                        android:textSize="@dimen/already_member" />
+
+                    <TextView
+                        android:id="@+id/signIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text=" Sign In"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/already_member" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/signUpTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:text="Terms of Services"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/already_member" />
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="0dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <include layout="@layout/toolbar_with_image_view"
+        android:id="@+id/include"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <include layout="@layout/featured_beats_single_row"
+                    />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F3F3F3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_background"
+                android:text="Active"
+                android:textSize="20sp"
+                android:textColor="@color/app_bar_text_color"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="60dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#F3F3F3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DESCRIPTION"
+                    android:paddingLeft="25dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#01346B"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DESCRIPTION"
+                    android:paddingLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:textSize="16sp"
+                    android:textColor="#676767"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DUE ON:15/7/2017 "
+                android:paddingLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="20sp"
+                android:textColor="#01346B"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_with_image_view"
+        android:id="@+id/include"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/include">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:background="#F3F3F3"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Want to earn more money?"
+                    android:textSize="22sp"
+                    android:textColor="#01346B"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                   />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Promote your beat through"
+                    android:textSize="18sp"
+                    android:textColor="#676767"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Social network"
+                    android:textSize="18sp"
+                    android:textColor="#676767"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="4dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="5"
+                        android:layout_marginBottom="10dp" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:id="@+id/beatImg"
+                            android:src="@drawable/te1"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="25dp"
+                            android:scaleType="centerCrop"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/border"
+                            android:text="499"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:gravity="center"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="25dp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="6">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Create Professional Infographics with your..."
+                                android:id="@+id/beat_title"
+                                android:textSize="18sp"
+                                android:textColor="#000"
+                                android:gravity="start"
+                                android:textAlignment="viewStart"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Category : Graphic Designe"
+                                android:textSize="14sp"
+                                android:textColor="#676767"
+                                android:gravity="start"
+                                android:textAlignment="viewStart"
+                                android:layout_marginTop="10dp"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="45dp"
+                                android:gravity="center_vertical">
+                                <RatingBar
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"
+                                    android:id="@+id/ratingBar"
+                                    style="?android:attr/ratingBarStyleSmall"
+                                    android:isIndicator="false"
+                                    android:gravity="center_vertical"
+                                    android:progressTint="#FAB022"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="(1555)"
+                                    android:textColor="#676767"
+                                    android:textSize="14sp"
+                                    android:gravity="center"
+                                    android:layout_marginLeft="10dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F3F3F3"
+                    android:id="@+id/promote_Your_Beat_Change_Beat">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/menu_manage_sales_text"
+                        android:text="CHANGE BEAT"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#01346B"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                         />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lasd"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="15dp"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/menu_manage_sales">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_icon_facebook"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share with friends"
+                        android:textSize="24sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#01346B"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="65dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lasd"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginLeft="30dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_icon_gplus"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share with Group"
+                        android:textSize="24sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#01346B"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="65dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lasd"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginLeft="30dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_icon_gplus"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share with Group"
+                        android:textSize="24sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#01346B"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="65dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lasd"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

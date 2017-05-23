@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backgroundmain"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_backgroundicon"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <RelativeLayout
+                android:layout_width="@dimen/splash_logo_back"
+                android:layout_height="@dimen/splash_logo_back"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="106dp"
+                android:background="@drawable/ic_logo_background_circle">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/logoSpalsh"
+                    android:layout_width="@dimen/splash_logo_width"
+                    android:layout_height="@dimen/splash_logo_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="33dp"
+                    android:background="@drawable/ic_logo_fixpocket" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/fixPocket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Fixpocket"
+                android:textColor="@color/app_bar_text_color"
+                android:textSize="@dimen/splash_text_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fixPocket"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Why Negotiate?"
+                android:textColor="@color/app_bar_text_color"
+                android:textSize="@dimen/splash_text_title2" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
